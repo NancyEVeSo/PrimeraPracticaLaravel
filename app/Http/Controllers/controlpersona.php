@@ -17,5 +17,23 @@ class controlpersona extends Controller
         
     }
 
+    public function ingresar2(Request $dato){
+        
+
+        $nombre =$dato->nombre;
+        $apellido= $dato->apellido;
+        $cedula= $dato->cedula;
+        $promedio= $dato->promedio;
+
+
+        $arreglo= array("$nombre","$apellido", "$cedula", "$promedio");
+
+        return view('mostrarP', compact('arreglo'));
+
+    }
+
+
+
+
 
 }

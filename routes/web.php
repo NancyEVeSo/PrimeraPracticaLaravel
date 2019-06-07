@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 Route::get('ingresarP','controlpersona@ingresar');
 Route::get('mostrarP','controlpersona@mostrar');
-
+Route::post('mostrarP','controlpersona@ingresar2');
